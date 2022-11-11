@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <script>
+    function validateform() {
+      var name = document.myform.name.value;
+      var name = document.myform.password.value;
+      if (name == || name == "") {
+        alert("name cant be blank");
+        return false;
+      }
+    } else if (password.length < 6) {
+      alert("password must be atleast 6 charvter")
+      return false;
+    }
+    }
+
+  </script>
+</head>
+
+<body>
+  <h1>welcome to philosopher Noor page</h1><br>
+  <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()">
+    Name:<input type="text" name="name"></br>
+    password:<input type="password" name="password"></br>
+    <input type="submit" value="register"></br>
+    <button onclick="fun()">
+    click me</button>
+    </button></br>
+    <form name="f1" action="register.jsp" onsubmit="return matchpass()">
+    password:<input type="pasword" name=password"></br>
+    re-enter password:<input type="password" name="password2">
+    <br/><button onclick="matchpass">
+    <input type="submit"><button/>
+  </form>
+
+</body>
+
+</html>
